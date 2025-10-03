@@ -1,0 +1,140 @@
+/* Общий сброс стилей для корректного отображения */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной фон страницы */
+body {
+    font-family: 'Arial', sans-serif; /* Стандартный шрифт */
+    background-color: #f6f1f8; /* Светлый сиреневый фон */
+    color: #5f4b8b; /* Тёмно-сиреневый цвет текста */
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* Центрирование контента в шапке */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    border-radius: 50%; /* Фото в круге */
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Обрезка изображения */
+    margin-bottom: 20px;
+    border: 5px solid #9b66b4; /* Рамка вокруг фото */
+    padding: 5px; /* Отступ внутри рамки */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тень для выделения фото */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+header img:hover {
+    transform: scale(1.1); /* Фото увеличивается при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #6a4e9f; /* Темно-сиреневый */
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Добавляем пространство между буквами */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #9b66b4; /* Более светлый сиреневый для подзаголовка */
+    font-weight: 500;
+}
+
+/* Стили для секции "Обо мне" */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2.2em;
+    color: #6a4e9f;
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Все буквы в заголовке большие */
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #7a5f9b; /* Легкий сиреневый */
+    line-height: 1.8;
+}
+
+/* Стили для списка хобби */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+    color: #7a5f9b;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 500;
+}
+
+ul li:before {
+    content: '•';
+    color: #9b66b4; /* Цвет маркера */
+    position: absolute;
+    left: 0;
+}
+
+/* Ссылки */
+a {
+    color: #9b66b4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7a5f9b; /* Изменение цвета при наведении */
+    text-decoration: underline;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 50px;
+    color: #9b66b4;
+    letter-spacing: 1px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.6em;
+    }
+
+    ul li {
+        font-size: 1.1em;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+}
